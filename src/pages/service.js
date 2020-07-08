@@ -3,9 +3,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 const service = () => {
     return (
-        <div className="service-page">
-            <h1>Service</h1>
-        </div>
+        <Layout>
+            <SEO title="service"/>
+            <div className="service-page">
+                <h1>Service</h1>
+            </div>
+        </Layout>
     )
 }
 
