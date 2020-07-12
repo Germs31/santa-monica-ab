@@ -5,6 +5,7 @@
 
 body, html {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 main {
@@ -16,13 +17,87 @@ main {
 
 /* Header */
 header {
-  height: 150px;
+  height: 100px;
+  border-bottom: solid #000 1px;
 }
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-container .nav {
+  display: flex;
+  align-items: center;
+  height: 100px
+}
+
+.nav-container .nav nav ul{
+  display: flex;
+}
+.nav-container .nav nav ul li{
+  list-style: none;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+ .nav-container .hamburger-container{
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background: red;
+}
+
+.nav-container .hamburger-container .hamburger{
+  margin: 3px 0;
+  height: 3px;
+  width: 25px;
+  background: #000;
+}
+
+
+.mobile-overlay{
+  top: 0;
+  left: -120rem;
+  position: fixed;
+  height: 100%;
+  width: 35%;
+  background-color: #000;
+}
+
+.mobile-overlay nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.mobile-overlay nav ul li {
+  list-style-type: none;
+  font-size: 2rem;
+  margin: 15px 0;
+  transition: 1s;
+}
+
+.mobile-overlay nav ul li:hover {
+  color: red;
+}
+
+.mobile-overlay.show{
+  left: 0;
+}
+
 
 /* Footer */
 
 footer {
-  height: 150px;
+  height: 300px;
+  width: 100%;
 }
 
 /* HOME PAGE */
@@ -30,11 +105,34 @@ footer {
 
 /* Landing (home) */
 .banner{
-  height: 25vh;
-  background: green;
+  /* height: 75vh; */
+  background: url(../images/banner.png)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+.banner-text{
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
 
+.banner-btn{
+  padding: 10px;
+}
+
+.banner-link{ 
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
 /* Service (home)  */
 
 .service-section{
@@ -83,3 +181,13 @@ footer {
 
 /* 404 PAGE */
 /* ///////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* MEDIA QUERIES */
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 950px){
+  .nav-container .hamburger-container{
+    display: flex;
+  }
+}

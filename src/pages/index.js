@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -11,8 +10,8 @@ const IndexPage = () => (
     <div className="banner">
       <div className="banner-text">
         <h1>Santa Monica Auto Body</h1>
-        <button>
-          <Link to="/">Contact</Link>
+        <button className="banner-btn">
+          <Link className="banner-link" to="/">Contact</Link>
         </button>
       </div>
     </div>
