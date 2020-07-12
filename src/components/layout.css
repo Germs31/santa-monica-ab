@@ -50,7 +50,16 @@ header {
 .nav-container .nav nav ul li{
   list-style: none;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+
+.nav-container .nav nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: 1s;
+}
+.nav-container .nav nav ul li a:hover{
+  color: #0b2d4d;
 }
 
  .nav-container .hamburger-container{
@@ -107,8 +116,42 @@ header {
 /* Footer */
 
 footer {
+  color: #fff;
+  background: #0b2d4d;
+  display: flex;
+  flex-direction: column;
   height: 300px;
   width: 100%;
+}
+
+.footer-content{
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px;
+}
+.social-media{
+  margin-top: 25px;
+}
+.social-media .footer-icon {
+  font-size: 2.5rem;
+}
+
+.footer-nav{
+  margin-top: 10px;
+}
+.footer-nav ul li{
+  list-style-type: none;
+  padding: 5px 0;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-nav ul li a:hover {
+  color: red;
 }
 
 /* HOME PAGE */
