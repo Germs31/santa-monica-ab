@@ -12,6 +12,19 @@ main {
   height: 100%;
 }
 
+/* Global component */
+
+.first-word {
+  font-size: 2rem;
+  color: red;
+}
+
+.underline {
+  height: 3px;
+  width: 100%;
+  background: red;
+}
+
 /* COMPONENTS */
 /* //////////////////////////////////////////////////////////////////////////// */
 
@@ -137,21 +150,36 @@ footer {
 
 .service-section{
   height: 25vh;
-  background: yellow;
+  background: navy;
 }
 
 /* Mission Statment (home) */
 
 .mission-statment{
-  height: 50vh;
-  background: blue;
+  height: 75vh;
+  padding: 40px;
+  /* background: blue; */
+}
+
+.statment-word-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0;
+}
+
+.statment-words {
+  padding: 10px;
+}
+
+.statment-words h2 {
+  width: 100%;
+  margin-right: 200px;
 }
 
 /* Brands (home) */
 
 .brands {
   height: 50vh;
-  background: black;
 }
 
 
