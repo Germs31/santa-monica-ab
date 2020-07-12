@@ -31,7 +31,6 @@ main {
 /* Header */
 header {
   height: 100px;
-  border-bottom: solid #000 1px;
 }
 
 .nav-container{
@@ -62,7 +61,6 @@ header {
   align-items: center;
   height: 100px;
   width: 100px;
-  background: red;
 }
 
 .nav-container .hamburger-container .hamburger{
@@ -146,11 +144,39 @@ footer {
   font-size: 1.1rem;
   text-transform: uppercase;
 }
+/* Operation information */
+.operation-information{
+  background: #0b2d4d;
+  color: #fff;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.opt-icons{
+  font-size: 2rem;
+}
+
+.operation-information .location{
+  text-align: center;
+  width: 100%;
+}
+
+.operation-information .phone{
+  text-align: center;
+  width: 100%;
+}
+.operation-information .hours{
+  text-align: center;
+  width: 100%;
+}
 /* Service (home)  */
 
 .service-section{
   height: 25vh;
-  background: navy;
+  background: #0b2d4d;
 }
 
 /* Mission Statment (home) */

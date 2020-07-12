@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import {MdLocationOn, MdPhone, MdAccessTime} from 'react-icons/md'
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,6 +17,31 @@ const IndexPage = () => (
         <button className="banner-btn">
           <Link className="banner-link" to="/">Contact</Link>
         </button>
+      </div>
+    </div>
+
+    <div className="operation-information">
+      <div className="phone">
+        <MdPhone className="opt-icons"/>
+        <div className="phone-text">
+          <h3>Phone Number</h3>
+          <p>(323) 937-4064</p>
+        </div>
+      </div>
+      <div className="location">
+        <MdLocationOn className="opt-icons"/>
+        <div className="location-text">
+          <h3>Location</h3>
+          <p>5262 Washington Blvd</p>
+          <p> Los Angeles, CA 90016</p>
+        </div>
+      </div>
+      <div className="hours">
+        <MdAccessTime className="opt-icons"/>
+        <div className="opt-text">
+          <h3>Hours</h3>
+          <p>Monday - Friday: 9:00am - 6:00pm</p>
+        </div>
       </div>
     </div>
 
