@@ -25,15 +25,17 @@ const IndexPage = () => (
         <MdPhone className="opt-icons"/>
         <div className="phone-text">
           <h3>Phone Number</h3>
-          <p>(323) 937-4064</p>
+          <a href="tel:+13239374064">(323) 937-4064</a>
         </div>
       </div>
       <div className="location">
         <MdLocationOn className="opt-icons"/>
         <div className="location-text">
           <h3>Location</h3>
-          <p>5262 Washington Blvd</p>
-          <p> Los Angeles, CA 90016</p>
+          <a href="https://www.google.com/maps/place/5262+Washington+Blvd,+Los+Angeles,+CA+90016" target="_blank">
+            <p>5262 Washington Blvd</p>
+            <p> Los Angeles, CA 90016</p>
+          </a>
         </div>
       </div>
       <div className="hours">

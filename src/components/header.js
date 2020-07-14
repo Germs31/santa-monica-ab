@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, {useState} from "react"
 import logo from '../images/logo.png'
+import {MdPhone} from 'react-icons/md'
 
 const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,6 +13,9 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header>
+      <div className="top-phone">
+        <h4>Call us today: <a style={{color: '#fff'}} href="tel:+13239374064">(323) 937-4064</a></h4>
+      </div>
       <div className="nav-container">
         <div className="logo">
           <Link to="/">

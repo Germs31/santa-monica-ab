@@ -14,6 +14,11 @@ main {
 
 /* Global component */
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .first-word {
   font-size: 2rem;
   color: red;
@@ -30,7 +35,15 @@ main {
 
 /* Header */
 header {
-  height: 100px;
+  height: 120px;
+}
+
+.top-phone {
+  padding: 5px;
+  background: #0b2d4d;
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }
 
 .nav-container{

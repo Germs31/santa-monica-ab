@@ -28,11 +28,13 @@ const Footer = () => {
               <h3>Shop Information</h3>
               <div className="underline"></div>
               <p>Location</p>
-              <p>5262 Washington Blvd</p>
-              <p>Los Angeles, CA 90016</p>
+              <a href="https://www.google.com/maps/place/5262+Washington+Blvd,+Los+Angeles,+CA+90016" target="_blank">
+                <p>Washington Blvd</p>
+                <p>Los Angeles, CA 90016</p>
+              </a>
 
               <p>Phone Number</p>
-              <p>(323) 937-4064</p>
+              <a href="tel:+13239374064">(323) 937-4064</a>
 
               <p>Hours</p>
               <p>Mon-Fri: 9:00am-6:00pm</p>
