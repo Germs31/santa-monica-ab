@@ -154,6 +154,20 @@ footer {
   color: red;
 }
 
+.copy-right{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.copy-right a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.copy-right a:hover{
+  color: red;
+}
+
 /* HOME PAGE */
 /* //////////////////////////////////////////////////////////////////////////// */
 
@@ -249,6 +263,17 @@ footer {
 
 .brands {
   height: 50vh;
+}
+
+/* Map (home) */
+.map-container{
+  background: red;
+  width: 100%;
+}
+
+.map{
+  width: 100%;
+  height: 500px;
 }
 
 

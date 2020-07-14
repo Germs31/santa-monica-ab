@@ -14,7 +14,9 @@ const Header = ({ siteTitle }) => {
     <header>
       <div className="nav-container">
         <div className="logo">
-          <img style={{height: '100px', width: '100px'}} src={logo}/>
+          <Link to="/">
+            <img style={{height: '100px', width: '100px'}} src={logo}/>
+          </Link>
         </div>
         <div className="nav">
           <nav>
@@ -23,7 +25,7 @@ const Header = ({ siteTitle }) => {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/services">Services</Link>
+                <Link to="/service">Services</Link>
               </li>
               <li>
                 <Link to="/gallery">Gallery</Link>

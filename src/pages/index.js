@@ -62,7 +62,14 @@ const IndexPage = () => (
 
     </div>
 
+
     <div className="brands">
+
+    </div>
+
+    <div className="map-container">
+      <iframe className="map"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1200&amp;height=500&amp;hl=en&amp;q=%205262%20Washington%20Blvd%20Los%20Angeles+(Santa%20Monica%20Auto%20Body)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+      <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f2d5999ed47c3af38848855b1d5087c2e364a30b'></script>
 
     </div>
   </Layout>

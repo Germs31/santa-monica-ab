@@ -46,13 +46,13 @@ const Footer = () => {
                   <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/about">Service</Link>
+                  <Link to="/service">Service</Link>
                 </li>
                 <li>
-                  <Link to="/about">Gallery</Link>
+                  <Link to="/gallery">Gallery</Link>
                 </li>
                 <li>
-                  <Link to="/about">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
 
@@ -63,7 +63,7 @@ const Footer = () => {
 
           <div className="copy-right">
             © {new Date().getFullYear()},
-            <Link to="/">Santa Monica Auto Body</Link>
+            <Link to="/"> Santa Monica Auto Body</Link>
           </div>
         </footer>
     )
