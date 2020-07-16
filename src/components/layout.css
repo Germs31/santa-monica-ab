@@ -26,7 +26,7 @@ a {
 
 .underline {
   height: 3px;
-  width: 100%;
+  width: 50%;
   background: red;
 }
 
@@ -245,14 +245,46 @@ footer {
 /* Service (home)  */
 
 .service-section{
-  height: 25vh;
-  background: #0b2d4d;
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(to right,
+    rgba(11,45,77, 0),
+    rgba(11,45,77, 1)), 
+  url('../images/blue_porsh.jpg') no-repeat center center fixed ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.service-content {
+  height: 100%;
+  margin: 0 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.service-text {
+  height: 50%;
+  width: 50%;
+  color: #0b2d4d;
+  background: #fff;
+}
+
+.service-text h4 {
+  font-size: 3rem;
+  margin: 10px 10px;
+}
+.service-text p {
+  font-size: 1rem;
+  margin: 10px 10px;
 }
 
 /* Mission Statment (home) */
 
 .mission-statment{
-  height: 75vh;
+  height: 625px;
   padding: 40px;
   /* background: blue; */
 }
