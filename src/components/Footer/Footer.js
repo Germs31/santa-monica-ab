@@ -3,14 +3,14 @@ import { Link } from 'gatsby'
 
 import {AiFillInstagram, AiFillGoogleCircle, AiFillFacebook} from 'react-icons/ai'
 
-import logo from '../images/white-logo.png'
+// import logo from '../images/white-logo.png'
 
 const Footer = () => {
     return (
         <footer>
           <div className="footer-content">
             <div className="logo-container">
-              <img style={{height: '150px', width: "150px"}} src={logo}/>
+              {/* <img src={logo}/> */}
               <h3>Auto Collision & Paint</h3>
             </div> 
 

@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, {useState} from "react"
-import logo from '../images/logo.png'
-import {MdPhone} from 'react-icons/md'
+// import logo from '../images/logo.png'
+import '../Header/Header.scss'
 
 const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,13 +13,10 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header>
-      <div className="top-phone">
-        <h4>Call us today: <a style={{color: '#fff'}} href="tel:+13239374064">(323) 937-4064</a></h4>
-      </div>
       <div className="nav-container">
         <div className="logo">
           <Link to="/">
-            <img style={{height: '100px', width: '100px'}} src={logo}/>
+            <h2>Santa Monica Auto body</h2> 
           </Link>
         </div>
         <div className="nav">
@@ -42,20 +39,23 @@ const Header = ({ siteTitle }) => {
         </div>
         <Hamburger setIsOpen={setIsOpen} isOpen={isOpen} />
       </div>
-      <div className={isOpen ? " mobile-overlay show" : "mobile-overlay hide"}>
+      <div className={isOpen ? " mobile-overlay show" : "mobile-overlay hide"} onClick={() => setIsOpen(!isOpen)}>
         <nav>
           <ul>
             <li>
-              <Link>About</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link>Services</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <Link>Gallery</Link>
+              <Link to="/service">Services</Link>
             </li>
             <li>
-              <Link>Contact</Link>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -65,6 +65,7 @@ const Header = ({ siteTitle }) => {
 }
 
 const Hamburger = ({setIsOpen,isOpen}) => {
+  console.log(isOpen)
   return( 
     <div className={isOpen ? "hamburger-container open" : "hamburger-container closed"} onClick={() => setIsOpen(!isOpen)}>
       <div className="hamburger"></div>
