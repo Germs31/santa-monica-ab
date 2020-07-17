@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import {MdLocationOn, MdPhone, MdAccessTime} from 'react-icons/md'
 
 
 import Layout from "../components/layout"

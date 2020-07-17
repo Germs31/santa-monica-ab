@@ -2,19 +2,29 @@
 $mainBlue: rgb(11,45,77);
 $mainRed: rgb(133, 10, 37);
 $white: rgb(255,255,255);
+$lghtGrey: rgb(223,223,223);
 header {
+    position: fixed;
+    width: 100%;
     .nav-container {
         background: $mainBlue;
-        height: 50px;
+        height: 100%;
         padding: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1.5px solid $mainRed;
         .logo{
+            display: flex;
+            align-items: center;
+            img {
+                width: 12%;
+                height: 12%;
+            }
             a {
                 color: $white;
                 h2 {
-                    font-weight: 200;
+                    font-weight: 300;
                 }
             }
         }
@@ -28,6 +38,10 @@ header {
                         margin: 0 10px;
                         a {
                             color: $white;
+                            text-transform: uppercase;
+                            font-size: .9rem;
+                            font-weight: 300;
+                            letter-spacing: .1rem;
                             transition: .5s;
                             &:hover{
                                 color: $mainRed;
@@ -36,9 +50,9 @@ header {
                     }
                 }
             }
-            @media (max-width: 950px) {
-                display: none;
-            }
+            // @media (max-width: 950px) {
+            //     display: none;
+            // }
         }
 
         .hamburger-container {
@@ -47,10 +61,9 @@ header {
             position: relative;
             display: none;
             cursor: pointer;
-
-            @media (max-width: 950px) {
-                display: block;
-            }
+            // @media (max-width: 950px) {
+            //     display: block;
+            // }
 
             .hamburger{
                 background: $white;
@@ -91,6 +104,38 @@ header {
         }
     }
 
+    .nav-contact {
+        height: 50px;
+        width: 100%;
+        background: $lghtGrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 3px 6px black;
+        div {
+            margin: 0 50px;
+        }
+        .hours, .address, .phone{
+            display: flex;
+            align-items: center;
+            // background: green;
+            .nav-icon {
+                color: $mainRed;
+                font-size: 1.5rem;
+                margin-right: 10px;
+            }
+
+            a, p {
+                color: $mainBlue;
+                font-weight: 900;
+            }
+        }
+
+        // @media (max-width: 950px) {
+        //     display: none;
+        // }
+    }
+
     .mobile-overlay {
         height: 100vh;
         width: 100%;
@@ -98,9 +143,30 @@ header {
         background-color:$mainBlue;
         left: -120rem;
         transition: left .75s ease-in-out;
-
+        .overlay-contact{
+            background: $mainRed;
+            &-ctx{
+                height: 50px;
+                display: flex;
+                align-items: center;
+                .overlay-icon{
+                    font-size: 2rem;
+                }
+                a{
+                    font-size: 1.3rem;
+                    transition: .5s;
+                    &:hover {
+                        font-size:1.5rem;
+                    }
+                }
+                .overlay-icon, a{
+                    margin: 0 5px;
+                    color: $white;
+                }
+            }
+        }
         nav{
-            height: 75%;
+            height: 60%;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -108,7 +174,7 @@ header {
             ul {
                 li {
                     list-style-type: none;
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     margin: 20px 0;
                     a {
                         color: $white;
@@ -129,3 +195,5 @@ header {
         }
     }
 }
+
+@import 'mobile';

@@ -1,0 +1,16 @@
+@media(max-width: 950px){
+    header{
+        .nav-container {
+            .nav{
+                display: none;
+            }
+            .hamburger-container{
+                display: block;
+            }
+        }
+        .nav-contact {
+            display: none;
+        }
+
+    }
+}
