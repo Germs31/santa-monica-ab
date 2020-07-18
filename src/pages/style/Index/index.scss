@@ -38,14 +38,103 @@
     }
 }
 
-.mission-statment {
-    height: 50vh;
-    background: red;
+.mission-statement {
+    height: 75vh;
+    .mission-statement-content{
+        display: flex;
+        margin-top: 40px;
+        padding: 20px;
+        color: $mainBlue;
+        &-title{ 
+            width: 50%;
+            text-align: center;
+            h4 {
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+        }
+
+        &-paragraph{
+            width: 100%;
+            p {
+                font-size: 1.2;
+                font-weight: 300;
+                letter-spacing: 2px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &-img-container {
+        height: 75%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 70%;
+            height: 70%;
+        }
+    }
 }
 
 .service {
-    height: 50vh;
-    background: blue;
+    height: 75vh;
+    &-header {
+        text-align: center;
+        margin: 50px 0;
+        h3 {
+            font-size: 2.5rem;
+            color: $mainBlue;
+            text-transform: uppercase;
+        }
+    }
+    .service-card-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .service-card {
+            width: 300px;
+            height: 350px;
+            background: $mainBlue;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 5px 7px 10px rgba(0,0,0,0.4);
+            &-title {
+                display: flex;
+                justify-content: center;
+                .card-circle{
+                    height: 100px;
+                    width: 100px;
+                    background: $white;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 25px 0;
+                    img {
+                        height: 50%;
+                        width: 50%;
+                    }
+                }
+            }
+            &-text{
+                background: $mainRed;
+                padding: 15px 10px;
+                text-align: center;
+                color: $white;
+                h3 {
+                    margin: 15px 0;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                }
+                p{
+                    font-weight: 300;
+                }
+            }
+        }
+    }
 }
 
 @import "mobile";

@@ -14,4 +14,35 @@
             }
         }
     }
+
+    .mission-statement {
+        height: 100%;
+        .mission-statement-content{
+            flex-direction: column;
+            margin-top: 0;
+            &-title{ 
+                margin: 30px 0;
+                width: 100%;
+            }
+    
+            &-paragraph{
+                p {
+                    font-size: .8rem;
+                    letter-spacing: 1px;
+                    line-height: 20px;
+                }
+            }
+        }
+    
+        &-img-container {
+            display: none;
+        }
+    }
+
+    .service {
+        height: 100%;;
+        .service-card-container{
+            flex-direction: column;
+        }
+    }
 }
