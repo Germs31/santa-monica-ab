@@ -11,6 +11,13 @@ import logo from "../images/trans-cars.png"
 import repair from "../images/repair.png"
 import paint from "../images/pistol.png"
 import transport from "../images/transport.png"
+import mercury from "../images/mercury-logo.png";
+import stateFarm from "../images/state-farm-logo.png";
+import tripleA from "../images/aaa-logo.png"
+
+import bmw from "../images/bmw-logo.png";
+import ford from "../images/ford-logo.png";
+import honda from "../images/honda-logo.png"
 
 const IndexPage = () => (
   <Layout>
@@ -24,6 +31,8 @@ const IndexPage = () => (
         </button>
       </div>
     </div>
+
+
     <div className="mission-statement">
       <div className="mission-statement-content">
         <div className="mission-statement-content-title">
@@ -37,6 +46,8 @@ const IndexPage = () => (
         <img src={logo}/>
       </div>
     </div>
+
+
     <div className="service">
       <div className="service-header">
         <h3>Services</h3>
@@ -77,6 +88,30 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+
+    <div className="partner">
+      <div className="partner-insurance">
+        <div class="partner-title">
+          <h3>All Insurance Accepted</h3>
+        </div>
+        <div className="logo-container">
+          <img className="mercury-logo" src={mercury}/>
+          <img src={tripleA}/>
+          <img className="state-farm" src={stateFarm}/>
+        </div>
+      </div>
+      <div className="partner-car-brands">
+        <div class="partner-title">
+          <h3>Foriegn & Domestic</h3>
+        </div>
+        <div className="logo-container">
+          <img className="honda-logo" src={honda}/>
+          <img className="ford-logo" src={ford}/>
+          <img className="bmw-logo" src={bmw}/>
+        </div>
+      </div>
+    </div>
+
   </Layout>
 )
 
