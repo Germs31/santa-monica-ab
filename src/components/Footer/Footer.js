@@ -2,46 +2,23 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import {AiFillInstagram, AiFillGoogleCircle, AiFillFacebook} from 'react-icons/ai'
+import {MdLocationOn, MdPhone, MdAccessTime} from 'react-icons/md'
 
-// import logo from '../images/white-logo.png'
+
+import '../Footer/Footer.scss';
+import logo from '../../images/white-logo.png'
 
 const Footer = () => {
     return (
         <footer>
           <div className="footer-content">
             <div className="logo-container">
-              {/* <img src={logo}/> */}
+              <img src={logo}/>
               <h3>Auto Collision & Paint</h3>
-            </div> 
-
-            <div className="social-media">
-              <div className="icon-container">
-                <AiFillFacebook className="footer-icon"/>
-                <AiFillGoogleCircle className="footer-icon"/>
-                <AiFillInstagram className="footer-icon"/>
-              </div>
-              <div className="underline"></div>
-              <h4>Check us out</h4>
-            </div>
-
-            <div className="footer-operation">
-              <h3>Shop Information</h3>
-              <div className="underline"></div>
-              <p>Location</p>
-              <a href="https://www.google.com/maps/place/5262+Washington+Blvd,+Los+Angeles,+CA+90016" target="_blank">
-                <p>Washington Blvd</p>
-                <p>Los Angeles, CA 90016</p>
-              </a>
-
-              <p>Phone Number</p>
-              <a href="tel:+13239374064">(323) 937-4064</a>
-
-              <p>Hours</p>
-              <p>Mon-Fri: 9:00am-6:00pm</p>
             </div>
 
             <div className="footer-nav">
-              <h4>Navigation</h4>
+              <h3>Navigation</h3>
               <div className="underline"></div>
               <ul>
                 <li>
@@ -57,15 +34,45 @@ const Footer = () => {
                   <Link to="/contact">Contact</Link>
                 </li>
               </ul>
+            </div>
 
+            <div className="footer-operation">
+              <h3>Shop Information</h3>
+              <div className="underline"></div>
+              <div className="footer-location">
+                <MdLocationOn className="footer-opt-icons"/>
+                <a href="https://www.google.com/maps/place/5262+Washington+Blvd,+Los+Angeles,+CA+90016" target="_blank">
+                  <p>Washington Blvd</p>
+                  <p>Los Angeles, CA 90016</p>
+                </a>
+              </div>
+
+              <div className="footer-phone">
+                <MdPhone className="footer-opt-icons"/>
+                <a href="tel:+13239374064">(323) 937-4064</a>
+              </div>
+
+              <div className="footer-hours">
+                <MdAccessTime className="footer-opt-icons"/>
+                <p>Mon-Fri: 9:00am-6:00pm</p>
+              </div>
+            </div>
+
+            <div className="social-media">
+              <div className="icon-container">
+                <AiFillFacebook className="footer-icon"/>
+                <AiFillGoogleCircle className="footer-icon"/>
+                <AiFillInstagram className="footer-icon"/>
+              </div>
+              <div className="underline"></div>
+              <h4>Check us out</h4>
             </div>
 
           </div>
 
 
           <div className="copy-right">
-            © {new Date().getFullYear()},
-            <Link to="/"> Santa Monica Auto Body</Link>
+            <Link to="/">© {new Date().getFullYear()}, Santa Monica Auto Body</Link>
           </div>
         </footer>
     )

@@ -1,8 +1,5 @@
-// variables
-$mainBlue: rgb(11,45,77);
-$mainRed: rgb(133, 10, 37);
-$white: rgb(255,255,255);
-$lghtGrey: rgb(223,223,223);
+@import "../Styles/config.scss";
+
 header {
     position: fixed;
     width: 100%;
@@ -50,9 +47,6 @@ header {
                     }
                 }
             }
-            // @media (max-width: 950px) {
-            //     display: none;
-            // }
         }
 
         .hamburger-container {
@@ -61,9 +55,6 @@ header {
             position: relative;
             display: none;
             cursor: pointer;
-            // @media (max-width: 950px) {
-            //     display: block;
-            // }
 
             .hamburger{
                 background: $white;
@@ -79,7 +70,7 @@ header {
                 &:last-child{
                     top: 12px;
                 }
-
+                // STILL NOT WORKING! MUST BE SCSS THING
                 .open > & {
                     transition: all 1s ease-in-out;
                 }
@@ -118,7 +109,6 @@ header {
         .hours, .address, .phone{
             display: flex;
             align-items: center;
-            // background: green;
             .nav-icon {
                 color: $mainRed;
                 font-size: 1.5rem;
@@ -130,10 +120,6 @@ header {
                 font-weight: 900;
             }
         }
-
-        // @media (max-width: 950px) {
-        //     display: none;
-        // }
     }
 
     .mobile-overlay {

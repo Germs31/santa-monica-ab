@@ -1,0 +1,25 @@
+@import '_config';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Roboto Mono, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+// .underline {
+//     height: 3px;
+//     width: 100%;
+//     background: $mainRed;
+// }

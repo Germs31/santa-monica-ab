@@ -4,11 +4,21 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import transCars from "../images/trans-cars.png";
+
+import './style/Index/index.scss';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div className="landing">
+      
+    </div>
+    <div className="mission-statment">
+
+    </div>
+    <div className="service">
+
+    </div>
   </Layout>
 )
 

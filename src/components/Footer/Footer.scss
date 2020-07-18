@@ -1,0 +1,99 @@
+@import '../styles/config';
+footer {
+    background: $mainBlue;
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        .logo-container, .social-media, .footer-operation, .footer-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo-container {
+            img {
+                height: 150px;
+                width: 150px;
+            }
+
+            h3 {
+                color: $white;
+                font-weight: 300;
+            }
+        }
+
+        .social-media {
+            color: $white;
+            .icon-container {
+                .footer-icon {
+                    font-size: 3.3rem;
+                }
+            }
+            h4 {
+                font-weight: 400;
+                letter-spacing: 2px;
+            }
+        }
+    
+        .footer-operation {
+            color: $white;
+            h3 {
+                margin-bottom: 8px;
+            }
+            .footer-location, .footer-phone, .footer-hours {
+                display: flex;
+                width: 100%;
+                margin: 5px 0;
+                
+                a {
+                    color: $white;
+                    transition: .5s;
+                    &:hover {
+                        color: $mainRed;
+                    }
+                }
+                .footer-opt-icons{
+                    font-size: 1.2rem;
+                    margin: 0 9px;
+                }
+            }
+        }
+    
+        .footer-nav {
+            color: $white;
+            h4 {
+                margin-bottom: 8px;
+            }
+            ul {
+                padding: 0;
+                margin: 5px 0;
+                width:100%;
+                li {
+                    list-style-type: none;
+                    margin: 5px 0;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    a {
+                        color: $white;
+                        transition: .5s;
+                        &:hover {
+                            color: $mainRed;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-right {
+        text-align: center;
+        padding: 15px 0;
+        a {
+            color: $white;
+        }
+    }
+}
+
+@import "mobile";
+

@@ -1,0 +1,12 @@
+@media (max-width: 950px ){
+    footer{
+        .footer-content {
+            .logo-container {
+                width: 100%;
+            }
+            .social-media, .footer-operation, .footer-nav {
+                display: none;
+            }
+        }
+    }
+}

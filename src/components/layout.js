@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 
 import Header from "./Header/Header"
 import Footer from "./Footer/Footer"
-import "./layout.scss"
+import "./styles/layout.scss"
 
 const Layout = ({ children }) => {
 
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
       <Header/>
       <div>
         <main>{children}</main>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </>
   )
