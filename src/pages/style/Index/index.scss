@@ -1,3 +1,4 @@
+@import "../../../components/styles/config";
 .landing {
     height: 100vh;
     background: url('../../../images/shop.png') no-repeat center center fixed;
@@ -5,6 +6,36 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    &-content{
+        color: $white;
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+        }
+        h3 {
+            margin: 3px 0 15px 0;
+            font-size: 2.3rem;
+            font-weight: 200;
+        }
+
+        button {
+            background: $mainRed;
+            width: 150px;
+            a {
+                color: $white;
+                font-size: 1.2rem;
+                transition: .5s;
+                &:hover{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
 }
 
 .mission-statment {
@@ -16,3 +47,5 @@
     height: 50vh;
     background: blue;
 }
+
+@import "mobile";
