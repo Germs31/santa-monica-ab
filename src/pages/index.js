@@ -40,10 +40,25 @@ const IndexPage = () => (
         </div>
         <div className="mission-statement-content-paragraph">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="mission-button">
+            <Link to="/contact">Free Estimate</Link>
+          </button>
         </div>
       </div>
       <div className="mission-statement-img-container">
         <img src={logo}/>
+      </div>
+    </div>
+
+    <div className="learn-more">
+      <div className="learn-more-content">
+        <h3>Common Questions</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div className="learn-more-button">
+        <button>
+          <Link to="/about">Learn More</Link>
+        </button>
       </div>
     </div>
 
@@ -111,6 +126,13 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+
+    <div className="map">
+      <iframe className="google-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=5262%20washington%20blvd%20Los%20Angeles+(santa%20monica%20auto%20body)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+      
+      <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f1e9373d53db3ae060c9f3ab142593bc7e58117f'></script>
+    </div>
+
 
   </Layout>
 )
