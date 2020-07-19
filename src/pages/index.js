@@ -127,6 +127,16 @@ const IndexPage = () => (
       </div>
     </div>
 
+    <div className="banner">
+      <div className="banner-content">
+        <h3>Schedule a free estimate Toaday</h3>
+
+        <button>
+          <Link to="/contact">Contact</Link>
+        </button>
+      </div>
+    </div>
+
     <div className="map">
       <iframe className="google-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=5262%20washington%20blvd%20Los%20Angeles+(santa%20monica%20auto%20body)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
       

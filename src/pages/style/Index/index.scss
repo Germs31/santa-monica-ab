@@ -87,6 +87,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 75px;
         img {
             width: 70%;
             height: 70%;
@@ -264,6 +265,37 @@
             .bmw-logo {
                 height: 50%;
                 width: 20%;
+            }
+        }
+    }
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    background: $mainRed;
+    padding: 20px;
+    &-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $white;
+        h3 {
+            text-transform: uppercase;
+        }
+        button{
+            background: $mainBlue;
+            width: 250px;
+            height: 100%;
+            a {
+                color: $white;
+                text-transform: uppercase;
+                font-size: 1rem;
+                letter-spacing: 3px;
+                transition: .5s;
+                &:hover {
+                    font-size: 1.2rem
+                }
             }
         }
     }
