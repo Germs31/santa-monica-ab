@@ -1,0 +1,72 @@
+@import "../../../components/styles/config";
+.about-banner {
+    height: 65vh;
+    width: 100%;
+    background: url('../../../images/challenger.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-text{
+        margin-top: 150px;
+        color: $white;  
+        font-size: 3rem;
+        text-shadow: 1px 1px 1px black; 
+    }
+}
+
+.about-content {
+    height: 100%;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about-text{
+        margin: 0 50px;
+        width: 100%;
+        height: 100%;
+        h3 {
+            color: $mainBlue;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        p{
+            color: $mainBlue;
+            margin: 15px 0;
+            font-size: 1.2rem;
+            line-height: 25px;
+        }
+
+        button {
+            margin: 15px 0;
+            width: 200px;
+            height: 100%;
+            background: $mainRed;
+            a {
+                color: $white;
+                font-size: 1.3rem;
+                transition: .5s;
+                &:hover{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    &-img {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        img {
+            margin: 50px 0;
+            border-radius: 5px;
+            width: 50%;
+            box-shadow: 2px 6px 10px rgba(0,0,0,0.2);
+        }
+    }
+}
