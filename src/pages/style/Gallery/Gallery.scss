@@ -15,4 +15,22 @@
         color: $white;
         text-shadow: 1px 1px 1px black; 
     }
+
 }
+.gallery-images {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .gallery-img{
+        position: relative;
+        margin: 10px;
+        z-index: -5;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@import "mobile";

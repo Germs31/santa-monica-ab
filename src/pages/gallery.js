@@ -1,9 +1,14 @@
 import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { graphql } from "gatsby";
+import Img from 'gatsby-image'
 
 import "../pages/style/Gallery/Gallery.scss"
-const gallery = () => {
+
+
+const gallery = ({ data} ) => {
+    console.log(data)
     return (
         <Layout>
             <SEO title="gallery"/>
@@ -12,8 +17,87 @@ const gallery = () => {
                     <h1>Gallery</h1>
                 </div>
             </div>
+            <div className="gallery-images">
+                <Img className="gallery-img" fluid={data.backShop.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.elCoDamage.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.rarriImage.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.detailSection.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.cornerSpray.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.backSpray.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.frontShop.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.frontRightShop.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.middleShopTwo.childImageSharp.fluid} />
+            </div>
         </Layout>
     )
 }
+
+export const query = graphql`
+    {
+        backShop: file(relativePath: { eq: "back-shop.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        elCoDamage: file(relativePath: { eq: "el-co-damage.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        rarriImage: file(relativePath: { eq: "rarri.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        detailSection: file(relativePath: { eq: "detail-section.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        cornerSpray: file(relativePath: { eq: "corner-spray.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        frontShop: file(relativePath: { eq: "shop-front.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        frontRightShop: file(relativePath: { eq: "front-right-shop.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        backSpray: file(relativePath: { eq: "spray-room-back.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        middleShopTwo: file(relativePath: { eq: "middle-shop-two.JPG" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
 
 export default gallery

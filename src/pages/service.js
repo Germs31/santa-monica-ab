@@ -7,6 +7,7 @@ import "../pages/style/Service/Service.scss"
 
 import Elco from "../images/el-co-damage.jpg"
 import SprayRoom from "../images/spray-room-back.jpg"
+
 const service = () => {
     return (
         <Layout>
@@ -52,8 +53,19 @@ const service = () => {
             <div className="auto-body-repair">
                 <div className="auto-body-repair-content">
                     <h3><span className="first-word">Auto</span> Body Repair</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>We specialize in auto collision repair on all foreign and domestic cars. Heres a list of what we do exactly.</p>
+                    <div className="auto-body-repair-content-list">
+                        <ul>
+                            <li>Complete collision repair</li>
+                            <li>Minor parts repairs</li>
+                            <li>Mechanical assessment and repair</li>
+                        </ul>
+                        <ul>
+                            <li>Frame work</li>
+                            <li>Floor pull</li>
+                            <li>NO JOB IS TO SMALL!</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="auto-body-repair-img">
                     <img src={Elco}/>
@@ -66,8 +78,19 @@ const service = () => {
                 </div>
                 <div className="auto-body-repair-content">
                     <h3>Paint</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Our auto paint specialist unserstands the importance of craftmanship when it comes to paints. We make sure that all vehicles are prepped and have been assessed before any paint is laid. Here is what we offer and do.</p>
+                    <div className="auto-body-repair-content-list">
+                        <ul>
+                            <li>Prep & Assess Car</li>
+                            <li>Color Match</li>
+                            <li>Custom Paint(Any Brand)</li>
+                        </ul>
+                        <ul>
+                            <li>Wet Sand & Polish</li>
+                            <li>Wash & Detailed</li>
+                            <li>NO JOB IS TO SMALL!</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 

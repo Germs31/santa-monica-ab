@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Santa Monica Auto Body`,
+    description: `serving the greater Los Angeles ares with best in class auto collision and paint services for the last 33 years.`,
+    author: `Santa Monica Auto Body`,
   },
   plugins: [
     `gatsby-plugin-sass`,

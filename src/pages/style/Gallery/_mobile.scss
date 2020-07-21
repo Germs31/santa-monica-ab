@@ -1,0 +1,12 @@
+@media(max-width: 950px) {
+    .gallery-landing {
+        height: 50vh;
+        &-text{
+            margin-top: 75px;
+        }
+    
+    }
+    .gallery-images {
+        padding: 15px;
+    }
+}

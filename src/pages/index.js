@@ -39,7 +39,7 @@ const IndexPage = () => (
           <h4><span className="first-word">Our</span> commitment to you</h4>
         </div>
         <div className="mission-statement-content-paragraph">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Our mission is to provide all of our customers with quality auto body repair. We work on everything from collision repair to car painting. We provide competative rates and accept all insurance claims. Here at Santa Monica Auto Body, we strive for perfection to make sure that you are happy with our work. Contact us for a Free Estimate</p>
           <button class="mission-button">
             <Link to="/contact">Free Estimate</Link>
           </button>
@@ -53,7 +53,7 @@ const IndexPage = () => (
     <div className="learn-more">
       <div className="learn-more-content">
         <h3>Common Questions</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>We understand that most people have questions about the process and "the can and the can't do's" here. So we would like to provide answers to some common questions that we have encountered. To provide better service, please send us a message or call and we will be happy to answer you questions.</p>
       </div>
       <div className="learn-more-button">
         <button>
@@ -76,7 +76,7 @@ const IndexPage = () => (
           </div>
           <div className="service-card-text">
             <h3>Repair</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>We work with Auto Collision Repairs, Auto Dent Repairs, Cosmetic Damage Repairs, Car Restoration, with a team of professionals that have been in the auto body industry for over 32 years. </p>
           </div>
         </div>
         <div className="service-card">
@@ -87,7 +87,7 @@ const IndexPage = () => (
           </div>
           <div className="service-card-text">
             <h3>Paint</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Our auto painter provides you with the precision and care for your vehicle. we carry factory paint to custom paints. </p>
           </div>
         </div>
         <div className="service-card">
@@ -97,8 +97,8 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="service-card-text">
-            <h3>Collision</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <h3>Restoration</h3>
+            <p>Here at Santa Monica Auto Body we accept all insurance claims but we dont stop there. we accept all job and do our best give you the best rate.</p>
           </div>
         </div>
       </div>

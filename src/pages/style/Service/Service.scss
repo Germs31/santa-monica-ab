@@ -72,6 +72,16 @@
         p{
             margin: 5px 0;
         }
+
+        &-list {
+            display: flex;
+            color: $mainBlue;
+            ul {
+                li {
+
+                }
+            }
+        }
     }
     &-img{
         height: 100%;
