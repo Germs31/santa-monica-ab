@@ -1,0 +1,43 @@
+@media (max-width: 950px) {
+    .contact-landing {
+        &-text{
+            font-size: 2rem;
+        }
+    }
+    
+    .contact-header {
+        flex-direction: column;
+        margin: 50px 0;
+        &-title, &-paragraph {
+            padding: 10px;
+        }
+        &-title {
+            width: 100%;
+        }
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        &-map, &-form {
+            padding: 0;
+        }
+        &-map{
+            order: 1;
+            .google-map{
+                height: 250px;
+            }
+        }
+    
+        &-form {
+            margin: 25px 0;
+            form {
+                border-radius: 0;
+                padding: 10px;
+                input {
+                    height: 40px;
+                }
+            }
+        }
+    }
+    
+}

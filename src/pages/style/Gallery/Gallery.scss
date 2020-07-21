@@ -1,0 +1,18 @@
+@import "../../../components/styles/config";
+
+.gallery-landing {
+    height: 75vh;
+    background: url("../../../images/rarri-rim.jpg") center no-repeat no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-text{
+        margin-top: 150px;
+        font-size: 3rem;
+        color: $white;
+        text-shadow: 1px 1px 1px black; 
+    }
+}

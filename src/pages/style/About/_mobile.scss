@@ -1,18 +1,20 @@
-.about-banner {
-    &-text{
-        font-size: 2rem;
-        margin-top: 0;
+@media (max-width: 950px){
+    .about-banner {
+        &-text{
+            font-size: 2rem;
+            margin-top: 0;
+        }
     }
-}
-
-.about-content {
-    flex-direction: column;
-    padding: 20px;
-    &-img {
-        img {
-            margin: 20px 0;
-            width: 75%;
-            height: 75%;
+    
+    .about-content {
+        flex-direction: column;
+        padding: 20px;
+        &-img {
+            img {
+                margin: 20px 0;
+                width: 75%;
+                height: 75%;
+            }
         }
     }
 }

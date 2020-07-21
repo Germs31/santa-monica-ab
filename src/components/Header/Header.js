@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => {
       <div className="nav-contact">
         <div className="hours">
             <MdLocationOn className="nav-icon"/>
-            <p>Mon - Fri: 9Am - 6pm</p>
+            <p>Mon - Fri: 9am - 6pm</p>
         </div>
         <div className="address">
           <MdAccessTime className="nav-icon"/>
