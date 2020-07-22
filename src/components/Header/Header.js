@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import logo from '../../images/white-logo.png'
 import '../Header/Header.scss';
 import {MdLocationOn, MdPhone, MdAccessTime} from 'react-icons/md'
@@ -10,7 +10,9 @@ const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false)
   console.log(isOpen)
 
-  window.onresize = () => (window.innerWidth > 900 && isOpen) && setIsOpen(false)
+  useEffect(() => {
+    window.onresize = () => (window.innerWidth > 900 && isOpen) && setIsOpen(false)
+  }, [])
 
 
   return (
