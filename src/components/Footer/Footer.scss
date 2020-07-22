@@ -25,6 +25,9 @@ footer {
 
         .social-media {
             color: $white;
+            a {
+                color: $white;
+            }
             .icon-container {
                 .footer-icon {
                     font-size: 3.3rem;

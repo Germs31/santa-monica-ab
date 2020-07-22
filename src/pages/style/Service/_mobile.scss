@@ -17,6 +17,10 @@
         margin: 25px 0;
         &-content{
             order: 1;
+
+            &-list{
+                flex-direction: column;
+            }
         }
         &-img{
             img {

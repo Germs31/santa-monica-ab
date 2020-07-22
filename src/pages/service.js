@@ -25,26 +25,26 @@ const service = () => {
                 <div className="common-questions-card-container">
                     <div className="common-questions-card">
                         <div className="common-questions-card-title">
-                            <h3>Common Question 1</h3>
+                            <h3>Do you have a payment plan?</h3>
                         </div>
                         <div className="common-questions-card-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Unfortunately we do do not offer a payment plan. Though we dont, if a customer has to pay out of pocket we can offer a cometative price for the repair</p>
                         </div>
                     </div>
                     <div className="common-questions-card">
                         <div className="common-questions-card-title">
-                            <h3>Common Question 2</h3>
+                            <h3>Is it repairable?</h3>
                         </div>
                         <div className="common-questions-card-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>We handle and take care of any car, reguardless of the damage. No job is to big for us.</p>
                         </div>
                     </div>
                     <div className="common-questions-card">
                         <div className="common-questions-card-title">
-                            <h3>Common Question 3</h3>
+                            <h3>Do you provide a rental?</h3>
                         </div>
                         <div className="common-questions-card-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>We regret to inform that we do not offer a rental car. Depending on your insurance, you may be eliable for one through them.</p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ const service = () => {
                     <img src={SprayRoom}/>
                 </div>
                 <div className="auto-body-repair-content">
-                    <h3>Paint</h3>
+                    <h3><span className="first-word">Auto</span> Paint</h3>
                     <p>Our auto paint specialist unserstands the importance of craftmanship when it comes to paints. We make sure that all vehicles are prepped and have been assessed before any paint is laid. Here is what we offer and do.</p>
                     <div className="auto-body-repair-content-list">
                         <ul>

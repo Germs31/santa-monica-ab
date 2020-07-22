@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import {AiFillInstagram, AiFillGoogleCircle, AiFillFacebook} from 'react-icons/ai'
+import {AiFillInstagram, AiFillFacebook} from 'react-icons/ai'
 import {MdLocationOn, MdPhone, MdAccessTime} from 'react-icons/md'
+import {FaYelp} from 'react-icons/fa'
 
 
 import '../Footer/Footer.scss';
@@ -60,9 +61,15 @@ const Footer = () => {
 
             <div className="social-media">
               <div className="icon-container">
-                <AiFillFacebook className="footer-icon"/>
-                <AiFillGoogleCircle className="footer-icon"/>
-                <AiFillInstagram className="footer-icon"/>
+                <a target="_blank" href="https://www.facebook.com/SantaMonicaAutoBodyRepair/">
+                  <AiFillFacebook className="footer-icon"/>
+                </a>
+                <a target="_blank" href="https://www.yelp.com/biz/santa-monica-auto-body-los-angeles">
+                  <FaYelp className="footer-icon"/>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/santamonica_autobody/?hl=en">
+                  <AiFillInstagram className="footer-icon"/>
+                </a>
               </div>
               <div className="underline"></div>
               <h4>Check us out</h4>
