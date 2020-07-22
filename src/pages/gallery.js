@@ -47,6 +47,13 @@ export const query = graphql`
                 }
             }
         }
+        rarriImage: file(relativePath: { eq: "rarri.jpg" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         detailSection: file(relativePath: { eq: "detail-section.jpg" }) {
             childImageSharp {
                 fluid {
