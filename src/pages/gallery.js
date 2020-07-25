@@ -7,8 +7,7 @@ import Img from 'gatsby-image'
 import "../pages/style/Gallery/Gallery.scss"
 
 
-const gallery = ({ data} ) => {
-    console.log(data)
+const gallery = ({ data }) => {
     return (
         <Layout>
             <SEO title="gallery"/>

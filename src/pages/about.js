@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackShop from '../images/back-shop.jpg'
+import backShop from '../images/back-shop.jpg'
 import {Link} from 'gatsby'
 import '../pages/style/About/about.scss'
 const about = () => {
@@ -23,7 +23,7 @@ const about = () => {
                 </div>
 
                 <div className="about-content-img">
-                    <img src={BackShop}/>
+                    <img src={backShop} alt="rear entrance to the body shop"/>
                 </div>
             </div>
         </Layout>

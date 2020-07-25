@@ -5,9 +5,9 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import './style/Index/index.scss';
+import './style/index/index.scss';
 
-import logo from "../images/trans-cars.png"
+import transcars from "../images/trans-cars.png"
 import repair from "../images/repair.png"
 import paint from "../images/pistol.png"
 import transport from "../images/transport.png"
@@ -46,7 +46,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="mission-statement-img-container">
-        <img src={logo}/>
+        <img src={transcars} alt="4 brand name cars with a transparent background"/>
       </div>
     </div>
 
@@ -71,7 +71,7 @@ const IndexPage = () => (
         <div className="service-card">
           <div className="service-card-title">
             <div className="card-circle">
-              <img src={repair}/>
+              <img src={repair} alt="tool icon"/>
             </div>
           </div>
           <div className="service-card-text">
@@ -82,7 +82,7 @@ const IndexPage = () => (
         <div className="service-card">
           <div className="service-card-title">
             <div className="card-circle">
-              <img src={paint}/>
+              <img src={paint} alt="spray gun icon"/>
             </div>
           </div>
           <div className="service-card-text">
@@ -93,7 +93,7 @@ const IndexPage = () => (
         <div className="service-card">
           <div className="service-card-title">
             <div className="card-circle">
-              <img src={transport}/>
+              <img src={transport} alt="car icon"/>
             </div>
           </div>
           <div className="service-card-text">
@@ -110,9 +110,9 @@ const IndexPage = () => (
           <h3>All Insurance Accepted</h3>
         </div>
         <div className="logo-container">
-          <img className="mercury-logo" src={mercury}/>
-          <img src={tripleA}/>
-          <img className="state-farm" src={stateFarm}/>
+          <img className="mercury-logo" src={mercury} alt="mercury insurance logo"/>
+          <img src={tripleA} alt="triple a insurance logo"/>
+          <img className="state-farm" src={stateFarm} alt="state farm insurance logo"/>
         </div>
       </div>
       <div className="partner-car-brands">
@@ -120,9 +120,9 @@ const IndexPage = () => (
           <h3>Foriegn & Domestic</h3>
         </div>
         <div className="logo-container">
-          <img className="honda-logo" src={honda}/>
-          <img className="ford-logo" src={ford}/>
-          <img className="bmw-logo" src={bmw}/>
+          <img className="honda-logo" src={honda} alt="honda logo"/>
+          <img className="ford-logo" src={ford} alt="ford logo" />
+          <img className="bmw-logo" src={bmw} alt="bmw logo" />
         </div>
       </div>
     </div>

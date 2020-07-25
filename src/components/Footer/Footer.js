@@ -14,13 +14,12 @@ const Footer = () => {
         <footer>
           <div className="footer-content">
             <div className="logo-container">
-              <img src={logo}/>
+              <img src={logo} alt="santa moncia auto body logo"/>
               <h3>Auto Collision & Paint</h3>
             </div>
 
             <div className="footer-nav">
               <h3>Navigation</h3>
-              <div className="underline"></div>
               <ul>
                 <li>
                   <Link to="/about">About</Link>
@@ -39,10 +38,9 @@ const Footer = () => {
 
             <div className="footer-operation">
               <h3>Shop Information</h3>
-              <div className="underline"></div>
               <div className="footer-location">
                 <MdLocationOn className="footer-opt-icons"/>
-                <a href="https://www.google.com/maps/place/5262+Washington+Blvd,+Los+Angeles,+CA+90016" target="_blank">
+                <a href="https://www.google.com/maps/place/5262+Washington+Blvd,+Los+Angeles,+CA+90016" rel="noreferrer" target="_blank">
                   <p>Washington Blvd</p>
                   <p>Los Angeles, CA 90016</p>
                 </a>
@@ -61,13 +59,13 @@ const Footer = () => {
 
             <div className="social-media">
               <div className="icon-container">
-                <a target="_blank" href="https://www.facebook.com/SantaMonicaAutoBodyRepair/">
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/SantaMonicaAutoBodyRepair/">
                   <AiFillFacebook className="footer-icon"/>
                 </a>
-                <a target="_blank" href="https://www.yelp.com/biz/santa-monica-auto-body-los-angeles">
+                <a target="_blank" rel="noreferrer" href="https://www.yelp.com/biz/santa-monica-auto-body-los-angeles">
                   <FaYelp className="footer-icon"/>
                 </a>
-                <a target="_blank" href="https://www.instagram.com/santamonica_autobody/?hl=en">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/santamonica_autobody/?hl=en">
                   <AiFillInstagram className="footer-icon"/>
                 </a>
               </div>

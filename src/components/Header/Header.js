@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
     <header>
       <div className="nav-container">
         <div className="logo">
-          <img src={logo}/>
+          <img src={logo} alt="santa monica auto body logo"/>
           <Link to="/">
             <h2>Santa Monica Auto body</h2> 
           </Link>
@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => {
         </div>
         <div className="address">
           <MdAccessTime className="nav-icon"/>
-          <a target="_blank" href="https://www.google.com/maps/place/5262+Washington+Blvd,+Los+Angeles,+CA+90016/">5262 Washington Blvd, Los Angeles, CA 90016</a>
+          <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/5262+Washington+Blvd,+Los+Angeles,+CA+90016/">5262 Washington Blvd, Los Angeles, CA 90016</a>
         </div>
         <div className="phone">
           <MdPhone className="nav-icon"/>
