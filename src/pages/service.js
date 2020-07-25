@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from 'gatsby'
 
-import "../pages/style/service/Service.scss"
+import "../pages/style/service/service.scss"
 
 import elco from "../images/el-co-damage.jpg"
-import sprayRoom from "../images/spray-room-back.jpg"
+import sprayroom from "../images/spray-room-back.jpg"
 
 const service = () => {
     return (
@@ -74,7 +74,7 @@ const service = () => {
 
             <div className="auto-body-repair">
                 <div className="auto-body-repair-img">
-                    <img src={sprayRoom} alt="image of the back of the spray room"/>
+                    <img src={sprayroom} alt="image of the back of the spray room"/>
                 </div>
                 <div className="auto-body-repair-content">
                     <h3><span className="first-word">Auto</span> Paint</h3>
