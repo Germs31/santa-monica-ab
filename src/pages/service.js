@@ -5,8 +5,8 @@ import { Link } from 'gatsby'
 
 import "../pages/style/service/service.scss"
 
-import elco from "../images/el-co-damage.jpg"
-import sprayroom from "../images/spray-room-back.jpg"
+import elco from "../images/el-co-damage.png"
+import sprayroom from "../images/spray-room-back.png"
 
 const service = () => {
     return (

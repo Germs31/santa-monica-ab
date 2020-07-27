@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import backshop from '../images/back-shop.jpg'
+import backshop from '../images/back-shop.png'
 import {Link} from 'gatsby'
 import '../pages/style/About/about.scss'
 const about = () => {

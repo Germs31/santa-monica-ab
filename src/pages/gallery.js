@@ -18,10 +18,8 @@ const gallery = ({ data }) => {
             </div>
             <div className="gallery-images">
                 <Img className="gallery-img" fluid={data.backShop.childImageSharp.fluid} />
-                <Img className="gallery-img" fluid={data.elCoDamage.childImageSharp.fluid} />
                 <Img className="gallery-img" fluid={data.detailSection.childImageSharp.fluid} />
                 <Img className="gallery-img" fluid={data.cornerSpray.childImageSharp.fluid} />
-                <Img className="gallery-img" fluid={data.backSpray.childImageSharp.fluid} />
                 <Img className="gallery-img" fluid={data.frontShop.childImageSharp.fluid} />
                 <Img className="gallery-img" fluid={data.frontRightShop.childImageSharp.fluid} />
                 <Img className="gallery-img" fluid={data.middleShopTwo.childImageSharp.fluid} />
@@ -32,14 +30,7 @@ const gallery = ({ data }) => {
 
 export const query = graphql`
     {
-        backShop: file(relativePath: { eq: "back-shop.jpg" }) {
-            childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        elCoDamage: file(relativePath: { eq: "el-co-damage.jpg" }) {
+        backShop: file(relativePath: { eq: "back-shop.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
@@ -75,13 +66,6 @@ export const query = graphql`
             }
         }
         frontRightShop: file(relativePath: { eq: "front-right-shop.jpg" }) {
-            childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        backSpray: file(relativePath: { eq: "spray-room-back.jpg" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
