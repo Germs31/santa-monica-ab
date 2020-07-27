@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import backshop from '../images/back-shop.png'
 import {Link} from 'gatsby'
-import '../pages/style/About/about.scss'
+import '../pages/style/about/about.scss'
 const about = () => {
     return (
         <Layout>

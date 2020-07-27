@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import './style/index/Index.scss';
+import '../pages/style/index/index.scss'
 
 import transcars from "../images/trans-cars.png"
 import repair from "../images/repair.png"

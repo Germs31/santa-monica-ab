@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from 'gatsby'
 
-import "../pages/style/service/Service.scss"
+import "../pages/style/service/service.scss"
 
 import elco from "../images/el-co-damage.png"
 import sprayroom from "../images/spray-room-back.png"
