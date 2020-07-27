@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby";
 import Img from 'gatsby-image'
 
-import "../pages/style/gallery/gallery.scss"
+import "../pages/style/Gallery/Gallery.scss"
 
 
 const gallery = ({ data }) => {
