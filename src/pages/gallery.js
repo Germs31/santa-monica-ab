@@ -18,11 +18,10 @@ const gallery = ({ data }) => {
             </div>
             <div className="gallery-images">
                 <Img className="gallery-img" fluid={data.backShop.childImageSharp.fluid} />
-                <Img className="gallery-img" fluid={data.detailSection.childImageSharp.fluid} />
-                <Img className="gallery-img" fluid={data.cornerSpray.childImageSharp.fluid} />
-                <Img className="gallery-img" fluid={data.frontShop.childImageSharp.fluid} />
-                <Img className="gallery-img" fluid={data.frontRightShop.childImageSharp.fluid} />
-                <Img className="gallery-img" fluid={data.middleShopTwo.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.rarri.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.middleShop.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.office.childImageSharp.fluid} />
+                <Img className="gallery-img" fluid={data.sprayRoom.childImageSharp.fluid} />
             </div>
         </Layout>
     )
@@ -37,42 +36,28 @@ export const query = graphql`
                 }
             }
         }
-        rarriImage: file(relativePath: { eq: "rarri.jpg" }) {
+        rarri: file(relativePath: { eq: "rarri.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        detailSection: file(relativePath: { eq: "detail-section.jpg" }) {
+        middleShop: file(relativePath: { eq: "middle-shop-two.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        cornerSpray: file(relativePath: { eq: "corner-spray.jpg" }) {
+        office: file(relativePath: { eq: "office.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        frontShop: file(relativePath: { eq: "shop-front.jpg" }) {
-            childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        frontRightShop: file(relativePath: { eq: "front-right-shop.jpg" }) {
-            childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        middleShopTwo: file(relativePath: { eq: "middle-shop-two.jpg" }) {
+        sprayRoom: file(relativePath: { eq: "spray-room-back.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
